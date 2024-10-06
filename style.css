@@ -189,4 +189,16 @@ footer {
     .sommaire {
         width: 30%; /* Augmentation de la largeur pour améliorer la lisibilité */
         font-size: 10px; /* Taille du texte réduite */
-        line-height: 25px; /* Réduction de l'espacement entre les lignes
+        line-height: 25px; /* Réduction de l'espacement entre les lignes*/
+}
+    .block{
+        width: 25%;
+    }
+    .block2{
+        width: 75%;
+        margin: 0px;
+    }
+    .filariane{
+        margin: 5px;
+    }
+}
