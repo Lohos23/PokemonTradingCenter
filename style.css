@@ -1,175 +1,192 @@
-/*Body*/
+/* Définition des styles de base pour l'ensemble du document */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    background-color: rgb(255, 0, 0);
-}
-img {
-    height: 90px; 
-    width: auto;
-}
-.block {
-    width: 10%;
-    text-align: center;
-    height: 100%;
-}
-.block2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    width: 90%;
-    height: 100%;
-    font-size: 1.2rem;
-    background-color: rgb(81, 165, 42);
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px;
-}
-.ptc {
-    flex: 1;
-    text-align: center;
-    margin: 0 20px;
-    size: 1.2rem;
-}
-.menu {
-    flex: 2;
-    text-align: right;
-    size: 1.2rem;
-}
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin: 0 15px;
-}
-.menu a:hover {
-    text-decoration: underline;
-    color: #fff;
+    box-sizing: border-box; /* Assure que la taille inclut le padding et les bordures */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espaces internes par défaut */
 }
 
-/*Main*/ 
+/* Styles pour l'en-tête (header) */
+header {
+    width: 100%; /* Occupe toute la largeur */
+    display: flex; /* Utilise Flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 10px 0; /* Ajoute du padding en haut et en bas */
+    background-color: rgb(255, 0, 0); /* Fond rouge */
+}
+
+/* Définition de la taille des images dans l'en-tête */
+img {
+    height: 90px; /* Hauteur fixe de 90px */
+    width: auto; /* La largeur s'adapte à la hauteur pour conserver les proportions */
+}
+
+/* Styles pour le bloc contenant le logo */
+.block {
+    width: 10%; /* Le logo occupe 10% de la largeur */
+    text-align: center; /* Centre horizontalement le contenu */
+    height: 100%; /* Occupe toute la hauteur de l'en-tête */
+}
+
+/* Styles pour le bloc contenant le titre et le menu */
+.block2 {
+    display: flex; /* Flexbox pour aligner le contenu à l'horizontale */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    border: 3px solid black; /* Bordure noire de 3px */
+    width: 90%; /* Le reste de l'espace, 90%, est dédié à ce bloc */
+    height: 100%; /* Occupe toute la hauteur de l'en-tête */
+    font-size: 1.2rem; /* Taille de police pour le texte */
+    background-color: rgb(81, 165, 42); /* Fond vert */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 10px; /* Ajoute du padding interne */
+    margin: 10px; /* Ajoute une marge externe autour du bloc */
+}
+
+/* Section du titre dans le bloc2 */
+.ptc {
+    flex: 1; /* Occupe 1 part de l'espace disponible dans le Flexbox */
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 20px; /* Ajoute une marge de 20px à gauche et à droite */
+}
+
+/* Menu de navigation */
+.menu {
+    flex: 2; /* Occupe 2 parts de l'espace disponible dans le Flexbox */
+    text-align: right; /* Aligne le texte à droite */
+}
+
+/* Lien dans le menu */
+.menu a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: black; /* Couleur du texte noir */
+    font-weight: bold; /* Texte en gras */
+    margin: 0 15px; /* Ajoute un espacement de 15px de chaque côté */
+}
+
+/* Changement de style lors du survol d'un lien */
+.menu a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+    color: #fff; /* Change la couleur du texte en blanc */
+}
+
+/* Styles pour la section principale (main) */
 main {
-    background : url(background.webp);
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
+    background: url(background.webp); /* Image de fond */
+    background-size: cover; /* L'image couvre toute la section */
+    width: 100%; /* Occupe toute la largeur */
+    display: flex; /* Flexbox pour organiser les sections */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    padding: 20px; /* Padding autour du contenu */
+    box-sizing: border-box; /* Inclut le padding et les bordures dans la largeur */
 }
+
+/* Styles pour le sommaire */
 .sommaire {
-    height: auto;
-    width: 15%;
-    border: 5px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-    font-size: 1,2rem;
-    border-radius: 10px;
-    padding: 20px;
-    line-height: 50px;
+    height: auto; /* La hauteur s'adapte au contenu */
+    width: 15%; /* 15% de la largeur du conteneur */
+    border: 5px solid rgb(255, 255, 255); /* Bordure blanche de 5px */
+    color: white; /* Texte en blanc */
+    text-align: center; /* Texte centré */
+    font-size: 1,2rem; /* Taille de police */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Ajoute du padding interne */
+    line-height: 50px; /* Espace entre les lignes de texte */
 }
+
+/* Section à droite du contenu principal */
 .cotedroit {
-    width: 80%;
+    width: 80%; /* La partie droite occupe 80% de la largeur */
 }
+
 /* Fil d'Ariane */
 .filariane {
-    height: 40px;
-    background-color: rgb(255, 0, 0);
-    border: 3px solid black;
-    text-align: center;
-    border-radius: 10px;
-    line-height: 40px;
+    height: 40px; /* Hauteur de 40px */
+    background-color: rgb(255, 0, 0); /* Fond rouge */
+    border: 3px solid black; /* Bordure noire de 3px */
+    text-align: center; /* Centre le texte horizontalement */
+    border-radius: 10px; /* Coins arrondis */
+    line-height: 40px; /* Aligne le texte verticalement au centre */
 }
 
-/* Section Présentation */
+/* Section de présentation des cartes */
 .presentation-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%; /* Occupe toute la largeur */
+    display: flex; /* Flexbox pour aligner les éléments verticalement */
+    flex-direction: column; /* Les articles sont alignés en colonne */
 }
+
+/* Contenu de présentation des cartes */
 .presentation-contenu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
+    display: flex; /* Flexbox pour aligner les cartes horizontalement */
+    justify-content: center; /* Centre horizontalement les cartes */
+    width: 100%; /* Occupe toute la largeur */
+    padding: 20px; /* Padding autour des cartes */
 }
-/*Cartes*/
+
+/* Styles pour chaque bloc de cartes */
 .bloc-1, .bloc-2, .bloc-3, .bloc-4, .bloc-5, .bloc-6, .bloc-7, .bloc-8, .bloc-9 {
-    width: 100%;
-    height: 100%;
-    margin: 20px;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: yellow;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    }
+    width: 100%; /* Chaque carte occupe 100% de la largeur disponible */
+    height: 100%; /* Chaque carte occupe toute la hauteur */
+    margin: 20px; /* Marge autour des cartes */
+    border: 3px solid black; /* Bordure noire de 3px */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: yellow; /* Fond jaune pour les cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
+    transition: transform 0.3s; /* Transition pour l'effet de zoom */
+}
+
+/* Effet au survol des cartes : agrandissement */
 .bloc-1:hover, .bloc-2:hover, .bloc-3:hover, .bloc-4:hover, .bloc-5:hover, .bloc-6:hover, .bloc-7:hover, .bloc-8:hover, .bloc-9:hover {
-        transform: scale(1.05);
-    }
+    transform: scale(1.05); /* Agrandit légèrement la carte */
+}
+
+/* Image des cartes */
 .carte {
-        width: 100%;
-        height: 100%;
-    }
-
-/*Reglement*/
-.reglement{ 
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;;
-}
-.StructureReglement{
-    flex-direction: column;
+    width: 100%; /* L'image occupe toute la largeur du bloc */
+    height: 100%; /* L'image occupe toute la hauteur */
 }
 
-/*Footer*/ 
-footer{
-    background-color: rgb(81, 165, 42);
-    text-align: center;
-    padding: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Styles pour la section règlement */
+.reglement {
+    display: flex; /* Flexbox pour la mise en page */
+    flex-direction: column; /* Les éléments sont organisés en colonne */
+    max-width: 800px; /* Largeur maximale de 800px */
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px; /* Padding autour du contenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-radius: 10px; /* Coins arrondis */
 }
-/*Adaptation Tablette*/
-@media screen and (max-width: 1200px){
+
+/* Structure pour la section règlement */
+.StructureReglement {
+    flex-direction: column; /* Organisation en colonne */
+}
+
+/* Styles pour le pied de page */
+footer {
+    background-color: rgb(81, 165, 42); /* Fond vert */
+    text-align: center; /* Texte centré */
+    padding: 5px; /* Padding autour du texte */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+}
+
+/* Adaptation pour tablette (écran de moins de 1200px) */
+@media screen and (max-width: 1200px) {
     .sommaire {
-        font-size: 10px;
-        line-height: 40px;
+        font-size: 10px; /* Taille du texte réduite */
+        line-height: 40px; /* Espacement réduit entre les lignes */
     }
-    .reglement{
-        flex-direction: column;
+    .reglement {
+        flex-direction: column; /* Organisation en colonne pour s'adapter à la taille réduite */
     }
 }
-/*Adaptation Telephone*/
+
+/* Adaptation pour téléphone (écran de moins de 800px) */
 @media screen and (max-width: 800px) {
     .presentation-contenu {
-    flex-direction: column;
+        flex-direction: column; /* Organisation verticale des cartes */
     }
     .sommaire {
-        width: 30%;
-        font-size: 10px;
-        line-height: 25px;
-    }
-    .block{
-        width: 25%;
-    }
-    .block2{
-        width: 75%;
-        margin: 0px;
-    }
-    .filariane{
-        margin: 5px;
-    }
-}
+        width: 30%; /* Augmentation de la largeur pour améliorer la lisibilité */
+        font-size: 10px; /* Taille du texte réduite */
+        line-height: 25px; /* Réduction de l'espacement entre les lignes
