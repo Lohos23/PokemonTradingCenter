@@ -1,0 +1,175 @@
+/*Body*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(255, 0, 0);
+}
+img {
+    height: 90px; 
+    width: auto;
+}
+.block {
+    width: 10%;
+    text-align: center;
+    height: 100%;
+}
+.block2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    width: 90%;
+    height: 100%;
+    font-size: 1.2rem;
+    background-color: rgb(81, 165, 42);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+.ptc {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+    size: 1.2rem;
+}
+.menu {
+    flex: 2;
+    text-align: right;
+    size: 1.2rem;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+}
+.menu a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/*Main*/ 
+main {
+    background : url(background.webp);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sommaire {
+    height: auto;
+    width: 15%;
+    border: 5px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    font-size: 1,2rem;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 50px;
+}
+.cotedroit {
+    width: 80%;
+}
+/* Fil d'Ariane */
+.filariane {
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 40px;
+}
+
+/* Section Présentation */
+.presentation-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.presentation-contenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+/*Cartes*/
+.bloc-1, .bloc-2, .bloc-3, .bloc-4, .bloc-5, .bloc-6, .bloc-7, .bloc-8, .bloc-9 {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    }
+.bloc-1:hover, .bloc-2:hover, .bloc-3:hover, .bloc-4:hover, .bloc-5:hover, .bloc-6:hover, .bloc-7:hover, .bloc-8:hover, .bloc-9:hover {
+        transform: scale(1.05);
+    }
+.carte {
+        width: 100%;
+        height: 100%;
+    }
+
+/*Reglement*/
+.reglement{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;;
+}
+.StructureReglement{
+    flex-direction: column;
+}
+
+/*Footer*/ 
+footer{
+    background-color: rgb(81, 165, 42);
+    text-align: center;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Adaptation Tablette*/
+@media screen and (max-width: 1200px){
+    .sommaire {
+        font-size: 10px;
+        line-height: 40px;
+    }
+    .reglement{
+        flex-direction: column;
+    }
+}
+/*Adaptation Telephone*/
+@media screen and (max-width: 800px) {
+    .presentation-contenu {
+    flex-direction: column;
+    }
+    .sommaire {
+        width: 30%;
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .block{
+        width: 25%;
+    }
+    .block2{
+        width: 75%;
+        margin: 0px;
+    }
+    .filariane{
+        margin: 5px;
+    }
+}
